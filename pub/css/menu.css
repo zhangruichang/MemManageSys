@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+body{background-color:#F7F8FD;margin:0px;padding:0px;height:99%}
+.left_bg {background-color:#E0E5F8;border-right:1px solid #29499E;height:99%}
+.left_link {color:#244393;font-size:12px;padding-bottom:4px;padding-left:10px;}
+td 
+{
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:14px;
+	line-height:15px;
+}
+.ditu 
+{
+	background-image:url("../../pub/img/left_bg.gif");
+	background-position:center bottom;
+	background-repeat:repeat-x;
+}
+.tree {background-color:#FFFFFF;border:1px solid #8BCFFC;}
+.TreeView {cursor:default;padding-left:10px;padding-top:10px;}
+.SelectedTreeNode 
+{
+	background-color:#B8D0F3;
+	border:1px solid #2F95DD;
+	font-family:sans-serif,arial,verdana;
+	font-size:12px;
+	padding:1px 2px;
+}

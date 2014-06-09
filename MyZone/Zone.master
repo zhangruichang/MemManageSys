@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Zone.master.cs" Inherits="MyZone_Zone" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" id="Head1">
+    <title>无标题页</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+   
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 403px;
+            margin-bottom: 74px;
+        }
+        .style6
+        {
+            width: 100%;
+        }
+        .style7
+        {
+            width: 203px;
+        }
+        .style8
+        {
+            height: 110px;
+        }
+        .style10
+        {
+            color: #244393;
+            font-size: 12px;
+            padding-bottom: 4px;
+            padding-left: 10px;
+            width: 211px;
+        }
+        .style11
+        {
+            background-image: url('../pub/img/left_bg.gif');
+            background-position: center bottom;
+            background-repeat: repeat-x;
+            width: 211px;
+        }
+        </style>
+        <script src="../pub/js/jquery.js"j type="text/javascript"></script>
+        <script language="javascript" type="text/javascript">
+        function money()
+            {
+              var dd='<%=Session["ismoney"].ToString() %>'
+              if(dd==null)
+              alert("未缴费会员，只有查看权限");
+            }
+            $(function () {
+                $tree = $("table.tree");
+                $("#dir").toggle(function () { $tree.hide(800); }, function () { $tree.show(800); })
+            })
+            
+    </script>
+     <link  href="../pub/css/home.css" rel="stylesheet" type="text/css" />	<script src="../pub/js/home.js" type="text/javascript"></script>
+     <link  href="../pub/css/menu.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server" enctype ="multipart/form-data" >
+    
+        <table class="style1">
+            <tr>
+                <td class="style8">
+                    <!-- Begin of 页头 -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="top">
+<tbody><tr>
+<td width="30%"><div align="center" class="TopHeader">
+<h1>网聚社会员管理系统</h1>
+</div></td>
+<td width="70%" valign="middle" align="center" class="subNav">
+<div align="center"></div>
+</td>
+</tr></tbody>
+</table>
+<!-- End of 页头 -->
+ 
+<!-- Begin of Nav -->
+<table height="30" cellspacing="0" cellpadding="0" border="0" style="width: 100%">
+<tbody><tr style="margin:0;">
+<td width="204" class="left_nav"><div id="weizhi"><img hspace="4" border="0" align="absMiddle" src="../pub/img/open.gif" alt="打开/关闭菜单" id="pic"><a id="dir" href="#">隐藏目录</a>&nbsp;&nbsp;</div></td>
+<td width="79" align="center" class="top_font" id="td1" style="">
+<a href=http://www.google.com target=_parent>Google</a></td>
+<td class="midbak"><a href="Message_Box.aspx">消息盒子</a>&nbsp;
+    <a href="MemCenter.aspx">个人中心</a></td>
+<td align="center" class="right_nav"><div align="right"><img hspace="4" border="0" align="absMiddle" src="../pub/img/exit.gif" alt="打开/关闭菜单"/><a href="../login.aspx" target=_parent>注销</a>&nbsp;&nbsp;&nbsp;&nbsp;</div></td>
+
+</tr>
+</tbody></table>
+<!-- End of Nav -->
+</td>
+            </tr>
+            <tr style="float:left; padding:0;">
+                <td style="float:left; padding:0;">
+                    <table class="style6" style=" float:left; margin:0; position:absolute;top:109px;left:0;">
+                        <tr>
+                            <td class="style7" style="float:left;">
+                                <table class='left_bg' width='198' height='100%' cellspacing=0 cellpadding=0 border=0 style="float:left;">
+<tr>
+    <td height="20" class="style10">
+    	欢迎您： <font color=gray><asp:Label ID="Label1" runat="server"></asp:Label>
+                                <asp:Label ID="Label2" runat="server"></asp:Label>
+                                &nbsp;<asp:Label ID="Label3" runat="server"></asp:Label>
+                            </td>
+</tr>
+<tr>
+	<td class='style11' align='center' valign='top'>
+		<table class='tree' width='198' height="99%" cellspacing=0 cellpadding=0 border=0>
+		<tr>
+			<td valign='top' bgcolor='#f7f8fd' align='center'>
+			<div style="height: 323px; width: 184px; overflow: auto;" class="TreeView" 
+                    id="TreeView1_div">
+			<!-- Begin of 菜单 -->
+				<table cellspacing="0" cellpadding="0" border="0" class="" 
+                    style="height: 37px; width: 98%" ><tbody><tr><td align="center" ><img width="19" height="20" src="../pub/img/r.gif" style="display: block;" alt=""></td><td valign="center" align="center"><img  src="../pub/img/page.gif" style="display: block;" alt=""></td><td style="padding-left: 3px;"><div style="width: 100%;" class="TreeNode" id="TreeView1_item_0_cell"><nobr><a href="viewinfo.aspx">查看资料</a></nobr></div></td><td width="100%"></td></tr></tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" class="" 
+                    style="height: 33px; width: 101%" ><tbody><tr><td align="center" ><img width="19" height="20" src="../pub/img/t.gif" style="display: block;" alt=""></td><td valign="center" align="center"><img  src="../pub/img/reply.gif" style="display: block;" alt=""></td><td style="padding-left: 3px;"><div style="width: 100%;" class="TreeNode" id="TreeView1_item_0_cell"><nobr><a href="changeinfo.aspx">修改资料</a></nobr></div></td><td width="100%"></td></tr></tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" class="" 
+                    style="height: 35px; width: 97%" ><tbody><tr><td align="center" ><img width="19" height="20" src="../pub/img/t.gif" style="display: block;" alt=""></td><td valign="center" align="center"><img  src="../pub/img/key.png" style="display: block;" alt=""></td><td style="padding-left: 3px;"><div style="width: 100%;" class="TreeNode" id="TreeView1_item_0_cell"><nobr><a href="changepsd.aspx">密码修改</a></nobr></div></td><td width="100%"></td></tr></tbody></table>
+				<table cellspacing="0" cellpadding="0" border="0" class="" 
+                    style="height: 41px; width: 99%" ><tbody><tr><td align="center" ><img width="19" height="20" src="../pub/img/t.gif" style="display: block;" alt=""></td><td valign="center" align="center"><img  src="../pub/img/luruyuan.gif" style="display: block;" alt=""></td><td style="padding-left: 3px;"><div style="width: 100%;" class="TreeNode" id="TreeView1_item_0_cell"><nobr><a href="freecount.aspx">空课统计</a></nobr></div></td><td width="100%"></td></tr></tbody></table>
+				<table cellspacing="0" cellpadding="0" border="0" class="" 
+                    style="height: 40px; width: 99%" ><tbody><tr><td align="center" ><img width="19" height="20" src="../pub/img/t.gif" style="display: block;" alt=""></td><td valign="center" align="center"><img  src="../pub/img/page.gif" style="display: block;" alt=""></td><td style="padding-left: 3px;"><div style="width: 100%;" class="TreeNode" id="TreeView1_item_0_cell"><nobr><a href="ScanTasks.aspx">查看任务</a></nobr></div></td><td width="100%"></td></tr></tbody></table>
+				<table cellspacing="0" cellpadding="0" border="0" class="" 
+                    style="height: 30px; width: 97%" ><tbody><tr><td align="center" ><img width="19" height="20" src="../pub/img/l.gif" style="display: block;" alt=""></td><td valign="center" align="center"><img  src="../pub/img/folder.gif" style="display: block;" alt=""></td><td style="padding-left: 3px;"><div style="width: 100%;" class="TreeNode" id="Div1"><nobr><a href="Deliver_Tasks.aspx">发布任务</a></nobr></div></td><td width="100%"></td></tr></tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" class="" 
+                    style="height: 38px; width: 97%" ><tbody><tr><td align="center" ><img width="19" height="20" src="../pub/img/l.gif" style="display: block;" alt=""></td><td valign="center" align="center"><img  src="../pub/img/arrow_top.gif" style="display: block;" alt=""></td><td style="padding-left: 3px;"><div style="width: 100%;" class="TreeNode" id="Div2"><nobr><a href="UploadFile.aspx">文件上传</a></nobr></div></td><td width="100%">
+                        <br />
+                        </td></tr></tbody></table>
+                <table width="100%" cellspacing="0" cellpadding="0" border="0" class="" ><tbody><tr>
+                    <td align="center" ><img width="19" height="20" src="../pub/img/l.gif" style="display: block;" alt=""></td>
+                    <td valign="center" align="center" ><img  src="../pub/img/download.gif" style="display: block;" alt=""></td>
+                    <td style="padding-left: 3px;" ><div style="width: 100%;" class="TreeNode" id="Div3"><nobr><a href="DownloadFile.aspx">文件下载</a></nobr></div></td>
+                    <td width="100%" >
+                        <br />
+                        <br />
+                    </td></tr></tbody></table>
+			<!-- End of 菜单 -->
+			</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</td>
+                            <td width="900px">
+                                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:MemManaSysConnectionString %>" 
+            SelectCommand="SELECT [pageinfo] FROM [pageinfo] WHERE ([id] = @id)">
+            <SelectParameters>
+                <asp:Parameter DefaultValue="1" Name="id" Type="String"/>
+            </SelectParameters>
+        </asp:SqlDataSource>
+        <br />
+        <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
+            <ItemTemplate>
+                <asp:Image ID="Image1" runat="server" 
+                    ImageUrl='<%# "../"+Eval("pageinfo") %>' />
+                <br />
+                <br />
+            </ItemTemplate>
+        </asp:DataList>
+    </form>
+        </body>
+</html>

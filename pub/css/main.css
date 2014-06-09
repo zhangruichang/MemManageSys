@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+body
+{
+background-attachment:fixed;
+background-image:url("../../pub/img/water.gif");
+background-repeat:repeat;
+font-family:Arial;
+font-size:12px;
+margin:0;
+}
+.title_left {
+background-image:url("../../pub/img/biao.gif");
+background-position:center center;
+background-repeat:no-repeat;
+height:28px;
+padding-left:20px;
+}
+.title_font {
+border-bottom:1px dashed #5989C7;
+color:#5989C7;
+font-size:14px;
+font-weight:bold;
+}
+#msg {
+border:1px solid #B9C7F6;
+border-collapse:collapse;
+}
+
+.GridBody td {
+border-color:#A6BBD0;
+border-width:1px;
+}
+#msg td {
+border-bottom:1px solid #B9C7F6;
+border-right:1px solid #B9C7F6;
+color:#3A66AF;
+font-size:12px;
+text-align:center;
+}

@@ -1,0 +1,65 @@
+body{
+background-attachment:fixed;
+background-image:url("../../pub/img/water.gif");
+background-repeat:repeat;
+font-family:Arial;
+font-size:12px;
+margin:0;
+}
+.title_left {
+background-image:url("biao.gif");
+background-position:center center;
+background-repeat:no-repeat;
+height:28px;
+padding-left:20px;
+}
+.title_font1 {
+color:#DC8713;
+font-family:"宋体";
+font-size:12px;
+line-height:30px;
+padding-left:30px;
+}
+.title_font2 {
+color:#E30504;
+font-size:12px;
+line-height:20px;
+text-align:center;
+}
+.title_font {
+border-bottom:1px dashed #5989C7;
+color:#5989C7;
+font-size:14px;
+font-weight:bold;
+}
+input,select{
+	border:1px dashed #444444;
+	padding:3px;
+	background-color:#FFFFFF;
+}
+/*input*/
+.input_on{
+padding:2px 8px 0pt 3px;
+height:18px;
+border:1px dashed #999;
+background-color:#FFFFCC;
+}
+.input_off{
+padding:2px 8px 0pt 3px;
+height:18px;
+border:1px dashed #CCC;
+background-color:#FFF;
+}
+.input_move{
+padding:2px 8px 0pt 3px;
+height:18px;
+border:1px dashed #999;
+background-color:#FFFFCC;
+}
+.input_out{
+/*height:16px;默认高度*/
+padding:2px 8px 0pt 3px;
+height:18px;
+border:1px dashed #CCC;
+background-color:#FFF;
+}

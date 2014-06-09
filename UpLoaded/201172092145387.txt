@@ -1,0 +1,49 @@
+autopostback不刷新密码：
+1.iframe 
+2.ajax
+using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Data;
+using System.Data.SqlClient;
+using System.Web.Configuration;
+using System.Text;
+using System.IO;
+
+1.修改了任务之后,taskdo 表没有更新(done)
+2.数据源重新设置(done)
+3.任务发布更新了任务，然后消息盒子不能同步更新
+
+消息盒子中任务的分类查找 包括未领取，。。。 自己还要能 更改状态
+
+GridVeiw表格的行数据内容我不知道怎么用下拉框做选择，然后对该记录进行更新
+
+
+有未领取，已领取，已完成，过期和拒绝
+
+
+执行人只能有三个自由的选项，未领取，已领取，拒绝   过期是系统改的，完成是发布人改的
+
+今天上午相当不顺
+1：用网络硬盘的例子 存储过程不能使用 2000和2008版本问题
+2. 时间函数不能使用
+3.文件上传还是比较复杂。
+
+
+<%@ Page Title="" Language="C#" MasterPageFile="~/MyZone/Zone.master" AutoEventWireup="true" CodeFile="exp2.aspx.cs" Inherits="MyZone_exp2" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <p>
+        <br />
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+    </p>
+    <p>
+        <asp:Button ID="Button1" runat="server" Text="Button" />
+        <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+    </p>
+</asp:Content>
+
+
+
