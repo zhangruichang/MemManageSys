@@ -23,4 +23,5 @@ Clone the Repository.
 ##Copyright and Licence
 
 2011 July to August Richard.
+
 Richard is the leader and coder of this project, he distribute tasks to team members, more than 80% codes were contributed by him : )
